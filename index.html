@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>GCmeet</title>
+</head>
+<body>
+    <nav>
+        <h1>GCmeet</h1>
+
+        <div class="contenedores contenedorInfo">
+            <p class="contenidoInfo">Fecha</p>
+            <p class="info">12/12/2023</p>
+            <img class="img-final" src="img/icono-calendario.png" alt="">
+        </div>
+        <div clasS="contenedores contenedorInfo">
+            <p class="contenidoInfo">Hora</p>
+            <p class="info">1:00 p.m.</p>
+            <img class="img-final" src="img/icono-reloj.png" alt="">
+        </div>
+        <div class="contenedores enlaceReunion">
+            <img src="img/icono-copiarContenido.png" alt="" onclick="copiarTexto()">
+            <p class="subirPosicion">Enlance</p>
+            <p class="texto-gris subirPosicion" id="texto-copiar">https://meet.google.com</p>
+        </div>
+          
+          <div id="notificacion-copia" class="ocultar">¡Texto copiado al portapapeles!</div>
+          
+        <div class="contenedores archivosReunion">
+            <p class="p-archivosReunion">Archivos de Reunion</p>
+            <div class="contenedor-archivos">
+                
+                    <img class="inconopdf" src="img/icono-pdf.png" alt="">                
+                    <p>Orden del dia.pdf</p>
+                    <img src="img/incono-ojo.png" alt="">
+
+                    <img class="inconopdf" src="img/icono-pdf.png" alt="">                
+                    <p>Informe junta.pdf</p>
+                    <img src="img/incono-ojo.png" alt="">
+
+                    <img class="inconopdf" src="img/icono-pdf.png" alt="">                
+                    <p>informe gerente.pdf</p>
+                    <img src="img/incono-ojo.png" alt="">
+
+                    <img class="inconopdf" src="img/icono-pdf.png" alt="">                
+                    <p>Informe financiero.pdf</p>
+                    <img src="img/incono-ojo.png" alt="">
+
+                    <img class="inconopdf" src="img/icono-pdf.png" alt="">                
+                    <p>Preposiciones.pdf</p>
+                    <img src="img/incono-ojo.png" alt="">
+
+                    <img class="inconopdf" src="img/icono-pdf.png" alt="">                
+                    <p>Orden del dia.pdf</p>
+                    <img src="img/incono-ojo.png" alt="">
+                
+            </div>
+
+        </div>
+          
+        <button class="contenedores cerrarSesion">Cerrar Sesión</button>
+    </nav>
+
+    <section>
+        <div class="art-imagenJunta">
+            <img class="logoGC" src="img/logoGC.png" alt="">
+            <h1 class="info-section posicionInfo">Junta directiva</h1>
+            <p class="GC moverDer">Garantias Comunitarias</p>
+        </div>
+
+        <article class="delegacion">
+            <label>Delegar poder</label>
+
+            <div class="columnas">
+
+                <div>
+                    <label>Identificacion</label>
+                    <p class="texto-gris ">C234323432</p>
+                    
+                </div>
+                <div>
+                    <label>Asamblea General</label>
+                    <p class="texto-gris">Garantias Comunitarias</p>
+                    
+                </div>
+            </div>
+                
+
+            <p class="ajustarPosicion">Nombre</p>
+            <p class="texto-gris ">Daniel Perez</p>
+
+            <p class="ajustarPosicion">Correo</p>
+            <p class="texto-gris ">daperez@garantiascomunitarias.com</p>
+
+            <p class="ajustarPosicion">Firma</p>
+
+            <div class="firma"></div>
+
+            <button class="bton-accion">Cancelar poder</button>
+        </article>
+
+        <article class="article2">
+            <h4>La reunión comenzará en</h4>
+            <div class="tiempoEspera">
+                <p class="dias texto">00:</p>
+                <p class="horas texto">00:</p>
+                <p class="minutos texto">00</p>
+
+                <p class="infoTiempo">Dias</p>
+                <p class="infoTiempo">Horas</p>
+                <p class="infoTiempo">Minutos</p>
+            </div>
+            
+            
+            <progress value="49" max="100"></progress>
+
+            <div class="textoAdicional">
+                <p class="info-barraProgreso">Quorum 23/50</p>
+                <p class="moverDerecha info-barraProgreso">49%</p>
+            </div>
+            <button class="bton-accion"><a href="https://meet.google.com" target="_blank">Ingresar a la reunión</a></button>
+
+        </article>
+
+    </section>
+    <aside>
+        <div class="bienvenida">
+            <h2>Bienvenido,</h2>
+            <p>Miguel</p>
+        </div>
+
+        <p class="proximasReuniones">Tus proximas reuniones</p>
+        <div class="contenedor-junta">
+            <img src="img/proximasReuniones.PNG" alt="Imagen de la junta directiva">
+            <div class="contenido-junta">
+                <h5>Junta directiva</h4>
+                <p class="texto-grisProxReu">Garantias Comunitarias Panamá</p>
+                <div class="fecha-hora">
+                    <input class="fecha texto-grisProxReu" id="temporizador" type="date" value="2023-06-25" readonly>
+                    <p class="hora">2:00 p.m</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-junta">
+            <img src="img/asamblea.jpg" alt="Imagen de la junta directiva">
+            <div class="contenido-junta">
+                <h5>Asamble General</h4>
+                <p class="texto-grisProxReu">Garantias Comunitarias</p>
+                <div class="fecha-hora">
+                    <input class="fecha texto-grisProxReu" type="date" value="2023-04-22" readonly>
+                    <p class="hora">10:00 AM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-junta">
+            <img src="img/asamblea.jpg" alt="Imagen de la junta directiva">
+            <div class="contenido-junta">
+                <h5>Asamblea General</h4>
+                <p class="texto-grisProxReu">Garantias Comunitarias Panamá</p>
+                <div class="fecha-hora">
+                    <input class="fecha texto-grisProxReu" type="date" value="2023-04-18" readonly>
+                    <p class="hora">10:00 AM</p>
+                </div>
+            </div>            
+        </div>
+
+        <div class="contenedor-junta">
+            <img src="img/proximasReuniones.PNG" alt="Imagen de la junta directiva">
+            <div class="contenido-junta">
+                <h5>Junta directiva</h4>
+                <p class="texto-grisProxReu">Garantias Comunitarias Panamá</p>
+                <div class="fecha-hora">
+                    <input class="fecha texto-grisProxReu" type="date" value="2023-04-18" readonly>
+                    <p class="hora">10:00 AM</p>
+                </div>
+            </div>
+        </div>
+          
+    </aside>
+
+    <script src="js.js">
+
+    </script>
+    
+</body>
+</html>
